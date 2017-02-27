@@ -1,0 +1,42 @@
+/*************************************************
+*
+* main styles
+*
+**************************************************/
+
+//********************
+// import
+//********************
+
+@import 'tools/_reset'; // pre
+@import 'tools/_variables'; // 1
+@import 'tools/_mixins'; // 2
+
+@import 'tools/_media-queries'; // -
+@import 'tools/_helpers'; // -
+
+//********************
+
+@import 'base/_base';
+@import 'base/_typography';
+
+//********************
+
+@import 'modules/_button';
+@import 'modules/_form';
+
+//********************
+
+@import 'layout/_footer';
+@import 'layout/_header';
+@import 'layout/_home';
+
+
+//********************
+// debug
+//********************
+
+* {
+  // background-color: rgba(0, 255, 0, .1);
+  // border: 1px solid red;
+}
