@@ -76,7 +76,6 @@ npm install
 ***
 ## Use:
 
-***
 ### development:
 
 ```
