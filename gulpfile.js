@@ -40,13 +40,13 @@ gulp.task('minCss', ['sass'], function() {
       cascade: false
     }))
     .pipe(cssnano())
-    .pipe(gulp.dest('dev/css'));
+    .pipe(gulp.dest('prod/css'));
 });
 
 gulp.task('minJs', function() {
   return gulp.src('src/js/**/*.js')
     .pipe(uglify())
-    .pipe(gulp.dest('dev/js'));
+    .pipe(gulp.dest('prod/js'));
 });
 
 gulp.task('copyDevFiles', ['sass'], function() {
@@ -74,7 +74,7 @@ gulp.task('buildHTML', function() {
     }));
 });
 
-gulp.task('default', ['clean', 'copyDevFiles', 'minCss', 'minJs', 'buildHTML', 'copyFiles'], function() {
+gulp.task('default', ['clean', 'copyFiles', 'buildHTML', 'minCss', 'minJs'], function() {
   return gulp.src('src/index.html')
     .pipe(injectPartials({
       removeTags: true
