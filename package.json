@@ -1,6 +1,6 @@
 {
   "name": "frontend-simple-boilerplate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "gulp + browsersync + scss + html partials + autoprefixer + uglify",
   "main": "index.js",
   "scripts": {
